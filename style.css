@@ -43,7 +43,7 @@
     left: 0;
     height: 8%;
     width: 100%;
-    background-color: chartreuse;
+    background-color: rgb(29, 28, 28);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,7 +54,6 @@
 .brano{
     height: 100%;
     width: 225px;
-    border: 1px solid violet;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -70,7 +69,6 @@
 .nome{
     height: 50%;
     width: 100px;
-    background-color: coral;
 }
 #branonome1{
     color: white;
@@ -83,20 +81,79 @@
 .cuore-cartella{
     height: 50%;
     width: 50px;
-    background-color: crimson;
     text-align: center;
     line-height: 35px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
 
 .scorrimento{
     height: 100%;
-    width: 400px;
-    border: 1px solid rgb(218, 149, 60);
+    width: 600px;
 }
+.icone-scorrimento{
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-top: 10px;
+}
+.fa-play-circle{
+    font-size: 30px;
+}
+.barra-scorrimento{
+    width: 100%;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scorrimento-traccia{
+    height: 7px;
+    width: 470px;
+    background-color: grey;
+    border-radius: 20px;
+}
+div > span{
+    font-size: 12px;
+    color: white;
+}
+
+
+
 .volume{
     height: 100%;
-    width: 200px;
-    border: 1px solid rgb(105, 95, 235);
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icone-destra{
+    height: 50%;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.barra-volume{
+    height: 50%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.barra-volume2{
+    height: 7px;
+    width: 98%;
+    background-color: gray;
+    border-radius: 20px;
 }
