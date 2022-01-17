@@ -4,21 +4,42 @@
     box-sizing: border-box;
 }
 
-/* barra sopra */
-
-.barra-sopra{
+.tutto{
+    height: 130vh;
     width: 100%;
-    height: 15vh;
-    background-color: black;
+    border: 3px solid black;
+    position: relative;
 }
 
-/* barra sotto */
-
-.barra-sotto{
+/* barre s d */
+.tutto-barre{
+    height: 100%;
     width: 100%;
-    height: 15vh;
-    background-color: rgb(184, 151, 151);
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+}
+.barra-sinistra{
+    flex-grow: 1;
+    background-color: brown;
+}
+.barra-destra{
+    flex-grow: 5;
+    background-color: burlywood;
+}
+
+/* barre s s */
+.barra-sopra{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(71, 40, 0);
+}
+
+.barra-sotto{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: chartreuse;
 }
