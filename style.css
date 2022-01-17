@@ -32,14 +32,71 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 10%;
+    height: 8%;
     width: 100%;
     background-color: rgb(71, 40, 0);
 }
 
 .barra-sotto{
     position: absolute;
-    height: 10%;
+    bottom: 0;
+    left: 0;
+    height: 8%;
     width: 100%;
     background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.brano{
+    height: 100%;
+    width: 225px;
+    border: 1px solid violet;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}    
+.foto{
+    height: 50px;
+    width: 50px;
+    background-image: url(img/sinister.jpeg);
+    background-size: cover;
+    margin-left: 5px;
+}
+
+.nome{
+    height: 50%;
+    width: 100px;
+    background-color: coral;
+}
+#branonome1{
+    color: white;
+}
+#branonome2{
+    font-size: 12px;
+    color: grey;
+}
+
+.cuore-cartella{
+    height: 50%;
+    width: 50px;
+    background-color: crimson;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+
+.scorrimento{
+    height: 100%;
+    width: 400px;
+    border: 1px solid rgb(218, 149, 60);
+}
+.volume{
+    height: 100%;
+    width: 200px;
+    border: 1px solid rgb(105, 95, 235);
 }
