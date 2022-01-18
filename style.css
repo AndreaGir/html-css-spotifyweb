@@ -49,9 +49,11 @@ body{
     padding-top: 5px;
     padding-right: 5px;
     font-size: 30px;
+    display: inline-block;
 }
 .grandtitolo{
     padding-top: 5px;
+    display: inline-block;
 }
 .lista > li{
     padding-top: 13px;
@@ -94,6 +96,11 @@ body{
 #icona-user{
     padding-right: 10px;
 }
+.spostaicona{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
 
 
 
@@ -110,7 +117,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    height: 10%;
+    height: 11%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
