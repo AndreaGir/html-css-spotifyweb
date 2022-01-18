@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: calc(100vh + 90px);
+}
 
 .tutto{
-    height: 130vh;
+    height: 100vh;
     width: 100%;
-    border: 3px solid black;
     position: relative;
 }
 
@@ -18,32 +20,53 @@
     display: flex;
     flex-direction: row;
 }
+
+/* barra sinistra */
 .barra-sinistra{
-    flex-grow: 1;
-    background-color: brown;
+    width: 200px;
+    background-color: black;
 }
+.home-cerca{
+    width: 100%;
+    height: 200px;
+    border: 1px solid white;
+}
+.riempi{
+    width: 100%;
+    height: 65px;
+}
+.iconehome{
+    color: white;
+}
+
+
+
+/* barra destra */
 .barra-destra{
-    flex-grow: 5;
+    flex-grow: 1;
     background-color: burlywood;
 }
 
-/* barre s s */
+/* barre sopra */
 .barra-sopra{
     position: absolute;
     top: 0;
     left: 0;
-    height: 8%;
+    height: 10%;
     width: 100%;
     background-color: rgb(71, 40, 0);
 }
 
+
+/* barra sotto */
 .barra-sotto{
-    position: absolute;
+    position: fixed;
+    z-index: 999;
     bottom: 0;
     left: 0;
-    height: 8%;
+    height: 90px;
     width: 100%;
-    background-color: rgb(29, 28, 28);
+    background-color: #282828;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -65,19 +88,20 @@
     background-size: cover;
     margin-left: 5px;
 }
-
 .nome{
     height: 50%;
     width: 100px;
+    padding-left: 7px;
 }
 #branonome1{
     color: white;
+    line-height: 30px;
 }
 #branonome2{
     font-size: 12px;
     color: grey;
+    line-height: 1px;
 }
-
 .cuore-cartella{
     height: 50%;
     width: 50px;
@@ -97,22 +121,22 @@
 }
 .icone-scorrimento{
     width: 200px;
-    height: 30px;
+    height: 33px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding-top: 10px;
+    padding-top: 28px;
 }
 .fa-play-circle{
     font-size: 30px;
 }
 .barra-scorrimento{
     width: 100%;
-    height: 34px;
+    height: 63px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .scorrimento-traccia{
@@ -130,17 +154,17 @@ div > span{
 
 .volume{
     height: 100%;
-    width: 220px;
+    width: 225px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .icone-destra{
     height: 50%;
-    width: 80px;
+    width: 86px;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: white;
 }
